@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-firestore.js"></script>
+        <script src="firebaase.js"></script>
+    </head>
+    <body>
+        Success
+        <p id="result"></p>
+        <button onclick="go()">Save</button>
+            <script>
+                    document.getElementById("result").innerHTML = localStorage.getItem("selectedDate");
+                    function go()
+                    {
+                     //   const firebase = require("firebase");
+                    // Required for side-effects
+                   //require("firebase/firestore");
+                    var db = firebase.firestore();
+                    db.collection('sample3').doc('sai').collection('newcoll').set({
+                    date: localStorage.getItem("selectedDate")
+                    })
+                    .then(function(docRef) {
+                        console.log("Document written with ID: ", docRef.id);
+                    })
+                    .catch(function(error) {
+                    console.error("Error adding document: ", error);
+                    });
+                    }
+                   
+            </script>
+    </body>
+</html>

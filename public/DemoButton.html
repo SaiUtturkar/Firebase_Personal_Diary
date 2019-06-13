@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Sign in button.</title>
+        <script src="js/myJs.js"></script>
+    </head>
+    
+    <body>
+            <button id="signInBtn" onclick="sign()">Sign In with Google</button>
+
+
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                https://firebase.google.com/docs/web/setup#config-web-app -->
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+                  
+                    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+                    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+                  
+                    <!-- Add Firebase products that you want to use -->
+                    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-auth.js"></script>
+                    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-firestore.js"></script>
+
+
+
+
+                    <script>
+                    // Your web app's Firebase configuration
+                    var firebaseConfig = {
+                        apiKey: "AIzaSyBR9FwHpJhoeHGD01dGYAXVd2kGbaiTxMk",
+                        authDomain: "qdemyproj.firebaseapp.com",
+                        databaseURL: "https://qdemyproj.firebaseio.com",
+                        projectId: "qdemyproj",
+                        storageBucket: "qdemyproj.appspot.com",
+                        messagingSenderId: "943607704458",
+                        appId: "1:943607704458:web:bbad9f42260938ce"
+                    };
+                    // Initialize Firebase
+                    firebase.initializeApp(firebaseConfig);
+                    </script>
+
+
+
+
+                
+    </body>
+</html>
+
+
+
+
+
+

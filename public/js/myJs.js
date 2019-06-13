@@ -1,0 +1,5 @@
+
+function sign()
+{
+    location.href("");
+}
